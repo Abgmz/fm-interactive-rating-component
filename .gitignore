@@ -1,5 +1,5 @@
 node_modules/
-
+.vscode/
 
 # Avoid accidental upload of the Sketch and Figma design files
 #####################################################
