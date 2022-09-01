@@ -8,8 +8,8 @@ This is a solution to the [Interactive rating component challenge on Frontend Me
 
 ### Links
 
-- Solution URL: <a href="https://github.com/Abgmz/fm-article-preview-component-solution" target="_blank"></a>
-- Live Site URL: <a href="https://fm-article-pw-comp.netlify.app/" target="_blank"></a>
+- Solution URL: <a href="https://github.com/Abgmz/fm-interactive-rating-component" target="_blank">https://github.com/Abgmz/fm-interactive-rating-component</a>
+- Live Site URL: <a href="https://fm-article-pw-comp.netlify.app/" target="_blank">https://fm-interactive-rating-comp.netlify.app/</a>
 
 ### Built with
 
