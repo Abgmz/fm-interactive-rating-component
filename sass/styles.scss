@@ -1,0 +1,151 @@
+@use "variables" as *;
+@forward "refresh-btn";
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: $very-dark-blue;
+    font-family: $main-font;
+    font-size: $main-font-size;
+}
+
+img{
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+
+.main {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+.rating {
+    width: 90%;
+    border-radius: 1.3rem;
+    max-width: 365px;
+    background: 
+        linear-gradient(#232a33, #181e28);
+    padding: 1.8rem;
+    position: relative;
+
+    &__container {
+        display: grid;
+        grid-template-columns: 100%;
+        row-gap: 1rem;
+    }
+
+    &__star {
+        background-color: $dark-blue;
+        padding: 1rem;
+        border-radius: 50%;
+    }
+
+    &__title {
+        color: $white;
+        font-weight: $font-weight-bold;
+    }
+
+    &__text {
+        color: $light-grey;
+        margin-bottom: .6rem;
+        line-height: 1.6;
+    }
+
+    &__numbers {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: .8rem;
+    }
+
+    &__number-radio-input {
+        width: 0;
+        opacity: 0;
+        display: none;
+    }
+
+    &__number-radio-label {
+        color: $light-grey;
+        display: block;
+        width: 2.8rem;
+        height: 2.8rem;
+        border-radius: 50%;
+        background-color: $dark-blue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all .2s ease;
+
+        &:hover {
+            background-color: $light-grey;
+            color: $white;
+            cursor: pointer;
+        }
+    }
+
+    &__submit {
+        background-color: $orange;
+        border: 0;
+        text-transform: uppercase;
+        font-weight: $font-weight-regular;
+        font-size: .9rem;
+        color: $white;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        border-radius: 2rem;
+        letter-spacing: 3px;
+        transition: all .2s ease;
+
+        &:hover {
+            background-color: $white;
+            color: $orange;
+            cursor: pointer;
+        }
+    }
+
+    &__thankyou-container {
+        display: grid;
+        grid-template-columns: 100%;
+        justify-items: center;
+        row-gap: 1rem;
+    }
+
+    &__thankyou-img {
+        transform: scale(.9);
+    }
+
+    &__thankyou-phrase {
+        background-color: $dark-blue;
+        color: $orange;
+        padding: .5rem 1rem;
+        border-radius: 30px;
+        margin-bottom: .7rem;
+    }
+
+    &__thankyou-title {
+        color: $white;
+        font-weight: $font-weight-regular;
+        font-size: 1.7rem;
+    }
+
+    &__thankyou-text {
+        text-align: center;
+        color: hsl(217deg, 12%, 63%);
+        margin-bottom: 0.6rem;
+        line-height: 1.6;
+    }
+}
+
+.rating__number-radio-input:checked 
++ .rating__number-radio-label {
+    background-color: $orange;
+    color: $white
+}
